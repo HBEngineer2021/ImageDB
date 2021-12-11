@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FDC1E4D481F062A6BA65370 /* Pods_ImageDB_ImageDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F994A217E8409954385622 /* Pods_ImageDB_ImageDBUITests.framework */; };
+		72A9E2AA7F789952F1770C0B /* Pods_ImageDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81511BFD1DA6B9CD823A6C49 /* Pods_ImageDB.framework */; };
+		9D2F66FE8B44BC3E8F5A2312 /* Pods_ImageDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03834581B01F0FA86DACE2F /* Pods_ImageDBTests.framework */; };
+		D7065F502670E102005DD8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7065F4F2670E102005DD8E1 /* AppDelegate.swift */; };
+		D7065F522670E102005DD8E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7065F512670E102005DD8E1 /* SceneDelegate.swift */; };
+		D7065F542670E102005DD8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7065F532670E102005DD8E1 /* ViewController.swift */; };
+		D7065F572670E102005DD8E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7065F552670E102005DD8E1 /* Main.storyboard */; };
+		D7065F592670E105005DD8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7065F582670E105005DD8E1 /* Assets.xcassets */; };
+		D7065F5C2670E105005DD8E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7065F5A2670E105005DD8E1 /* LaunchScreen.storyboard */; };
+		D7065F672670E106005DD8E1 /* ImageDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7065F662670E106005DD8E1 /* ImageDBTests.swift */; };
+		D7065F722670E106005DD8E1 /* ImageDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7065F712670E106005DD8E1 /* ImageDBUITests.swift */; };
+		D7065F802670F354005DD8E1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7065F7F2670F354005DD8E1 /* ImageViewController.swift */; };
+		D72A8B042681FE5A00358510 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72A8B032681FE5A00358510 /* Util.swift */; };
+		D72A8B06268200F200358510 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72A8B05268200F200358510 /* ModelManager.swift */; };
+		D744FACD2670FA9D00C3B9BD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D744FACC2670FA9D00C3B9BD /* libsqlite3.0.tbd */; };
+		D744FACF2670FAA900C3B9BD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D744FACE2670FAA900C3B9BD /* libsqlite3.tbd */; };
+		D744FAD22670FD9100C3B9BD /* ImageDB.db in Resources */ = {isa = PBXBuildFile; fileRef = D744FAD12670FD9100C3B9BD /* ImageDB.db */; };
+		D744FAD42670FE5700C3B9BD /* DBManagerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D744FAD32670FE5700C3B9BD /* DBManagerData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7065F632670E106005DD8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7065F442670E102005DD8E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7065F4B2670E102005DD8E1;
+			remoteInfo = ImageDB;
+		};
+		D7065F6E2670E106005DD8E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7065F442670E102005DD8E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7065F4B2670E102005DD8E1;
+			remoteInfo = ImageDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19E4AF88C2A068FF476F9771 /* Pods-ImageDB-ImageDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDB-ImageDBUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageDB-ImageDBUITests/Pods-ImageDB-ImageDBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1DFE109FA1B3CE447ECEBC5E /* Pods-ImageDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDBTests.release.xcconfig"; path = "Target Support Files/Pods-ImageDBTests/Pods-ImageDBTests.release.xcconfig"; sourceTree = "<group>"; };
+		39504274848CE4B83DCBBAB6 /* Pods-ImageDB-ImageDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDB-ImageDBUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImageDB-ImageDBUITests/Pods-ImageDB-ImageDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81511BFD1DA6B9CD823A6C49 /* Pods_ImageDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8463A83AB3522C53B07B4BF4 /* Pods-ImageDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDB.release.xcconfig"; path = "Target Support Files/Pods-ImageDB/Pods-ImageDB.release.xcconfig"; sourceTree = "<group>"; };
+		86F994A217E8409954385622 /* Pods_ImageDB_ImageDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageDB_ImageDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875D7C68F64636895DD609DC /* Pods-ImageDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDBTests.debug.xcconfig"; path = "Target Support Files/Pods-ImageDBTests/Pods-ImageDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D03834581B01F0FA86DACE2F /* Pods_ImageDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7065F4C2670E102005DD8E1 /* ImageDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7065F4F2670E102005DD8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7065F512670E102005DD8E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D7065F532670E102005DD8E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7065F562670E102005DD8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7065F582670E105005DD8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7065F5B2670E105005DD8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7065F5D2670E105005DD8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7065F622670E106005DD8E1 /* ImageDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7065F662670E106005DD8E1 /* ImageDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDBTests.swift; sourceTree = "<group>"; };
+		D7065F682670E106005DD8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7065F6D2670E106005DD8E1 /* ImageDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7065F712670E106005DD8E1 /* ImageDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDBUITests.swift; sourceTree = "<group>"; };
+		D7065F732670E106005DD8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7065F7F2670F354005DD8E1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		D72A8B032681FE5A00358510 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		D72A8B05268200F200358510 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		D744FACC2670FA9D00C3B9BD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D744FACE2670FAA900C3B9BD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D744FAD02670FBA600C3B9BD /* ImageDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageDB-Bridging-Header.h"; sourceTree = "<group>"; };
+		D744FAD12670FD9100C3B9BD /* ImageDB.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageDB.db; sourceTree = "<group>"; };
+		D744FAD32670FE5700C3B9BD /* DBManagerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManagerData.swift; sourceTree = "<group>"; };
+		FAF36CB18AAC81FC67474A28 /* Pods-ImageDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageDB.debug.xcconfig"; path = "Target Support Files/Pods-ImageDB/Pods-ImageDB.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7065F492670E102005DD8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D744FACF2670FAA900C3B9BD /* libsqlite3.tbd in Frameworks */,
+				D744FACD2670FA9D00C3B9BD /* libsqlite3.0.tbd in Frameworks */,
+				72A9E2AA7F789952F1770C0B /* Pods_ImageDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7065F5F2670E106005DD8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2F66FE8B44BC3E8F5A2312 /* Pods_ImageDBTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7065F6A2670E106005DD8E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FDC1E4D481F062A6BA65370 /* Pods_ImageDB_ImageDBUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32F7E10A3648C12094F82396 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAF36CB18AAC81FC67474A28 /* Pods-ImageDB.debug.xcconfig */,
+				8463A83AB3522C53B07B4BF4 /* Pods-ImageDB.release.xcconfig */,
+				39504274848CE4B83DCBBAB6 /* Pods-ImageDB-ImageDBUITests.debug.xcconfig */,
+				19E4AF88C2A068FF476F9771 /* Pods-ImageDB-ImageDBUITests.release.xcconfig */,
+				875D7C68F64636895DD609DC /* Pods-ImageDBTests.debug.xcconfig */,
+				1DFE109FA1B3CE447ECEBC5E /* Pods-ImageDBTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1824EF7D6E34A3BB5459096 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D744FACE2670FAA900C3B9BD /* libsqlite3.tbd */,
+				D744FACC2670FA9D00C3B9BD /* libsqlite3.0.tbd */,
+				81511BFD1DA6B9CD823A6C49 /* Pods_ImageDB.framework */,
+				86F994A217E8409954385622 /* Pods_ImageDB_ImageDBUITests.framework */,
+				D03834581B01F0FA86DACE2F /* Pods_ImageDBTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7065F432670E102005DD8E1 = {
+			isa = PBXGroup;
+			children = (
+				D7065F4E2670E102005DD8E1 /* ImageDB */,
+				D7065F652670E106005DD8E1 /* ImageDBTests */,
+				D7065F702670E106005DD8E1 /* ImageDBUITests */,
+				D7065F4D2670E102005DD8E1 /* Products */,
+				32F7E10A3648C12094F82396 /* Pods */,
+				B1824EF7D6E34A3BB5459096 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7065F4D2670E102005DD8E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7065F4C2670E102005DD8E1 /* ImageDB.app */,
+				D7065F622670E106005DD8E1 /* ImageDBTests.xctest */,
+				D7065F6D2670E106005DD8E1 /* ImageDBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7065F4E2670E102005DD8E1 /* ImageDB */ = {
+			isa = PBXGroup;
+			children = (
+				D744FAD12670FD9100C3B9BD /* ImageDB.db */,
+				D744FAD32670FE5700C3B9BD /* DBManagerData.swift */,
+				D7065F4F2670E102005DD8E1 /* AppDelegate.swift */,
+				D7065F512670E102005DD8E1 /* SceneDelegate.swift */,
+				D7065F532670E102005DD8E1 /* ViewController.swift */,
+				D7065F7F2670F354005DD8E1 /* ImageViewController.swift */,
+				D7065F552670E102005DD8E1 /* Main.storyboard */,
+				D7065F582670E105005DD8E1 /* Assets.xcassets */,
+				D7065F5A2670E105005DD8E1 /* LaunchScreen.storyboard */,
+				D7065F5D2670E105005DD8E1 /* Info.plist */,
+				D744FAD02670FBA600C3B9BD /* ImageDB-Bridging-Header.h */,
+				D72A8B032681FE5A00358510 /* Util.swift */,
+				D72A8B05268200F200358510 /* ModelManager.swift */,
+			);
+			path = ImageDB;
+			sourceTree = "<group>";
+		};
+		D7065F652670E106005DD8E1 /* ImageDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7065F662670E106005DD8E1 /* ImageDBTests.swift */,
+				D7065F682670E106005DD8E1 /* Info.plist */,
+			);
+			path = ImageDBTests;
+			sourceTree = "<group>";
+		};
+		D7065F702670E106005DD8E1 /* ImageDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7065F712670E106005DD8E1 /* ImageDBUITests.swift */,
+				D7065F732670E106005DD8E1 /* Info.plist */,
+			);
+			path = ImageDBUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7065F4B2670E102005DD8E1 /* ImageDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7065F762670E106005DD8E1 /* Build configuration list for PBXNativeTarget "ImageDB" */;
+			buildPhases = (
+				4303287CB317DC032E397513 /* [CP] Check Pods Manifest.lock */,
+				D7065F482670E102005DD8E1 /* Sources */,
+				D7065F492670E102005DD8E1 /* Frameworks */,
+				D7065F4A2670E102005DD8E1 /* Resources */,
+				686925BB2D77D5AF9623E59B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageDB;
+			productName = ImageDB;
+			productReference = D7065F4C2670E102005DD8E1 /* ImageDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7065F612670E106005DD8E1 /* ImageDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7065F792670E106005DD8E1 /* Build configuration list for PBXNativeTarget "ImageDBTests" */;
+			buildPhases = (
+				7152C9CBB6335829184CC426 /* [CP] Check Pods Manifest.lock */,
+				D7065F5E2670E106005DD8E1 /* Sources */,
+				D7065F5F2670E106005DD8E1 /* Frameworks */,
+				D7065F602670E106005DD8E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7065F642670E106005DD8E1 /* PBXTargetDependency */,
+			);
+			name = ImageDBTests;
+			productName = ImageDBTests;
+			productReference = D7065F622670E106005DD8E1 /* ImageDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7065F6C2670E106005DD8E1 /* ImageDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7065F7C2670E106005DD8E1 /* Build configuration list for PBXNativeTarget "ImageDBUITests" */;
+			buildPhases = (
+				C57BBFAA43377F5BB0BF4792 /* [CP] Check Pods Manifest.lock */,
+				D7065F692670E106005DD8E1 /* Sources */,
+				D7065F6A2670E106005DD8E1 /* Frameworks */,
+				D7065F6B2670E106005DD8E1 /* Resources */,
+				5D1242321AA601C627E582AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7065F6F2670E106005DD8E1 /* PBXTargetDependency */,
+			);
+			name = ImageDBUITests;
+			productName = ImageDBUITests;
+			productReference = D7065F6D2670E106005DD8E1 /* ImageDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7065F442670E102005DD8E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D7065F4B2670E102005DD8E1 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					D7065F612670E106005DD8E1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D7065F4B2670E102005DD8E1;
+					};
+					D7065F6C2670E106005DD8E1 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = D7065F4B2670E102005DD8E1;
+					};
+				};
+			};
+			buildConfigurationList = D7065F472670E102005DD8E1 /* Build configuration list for PBXProject "ImageDB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7065F432670E102005DD8E1;
+			productRefGroup = D7065F4D2670E102005DD8E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7065F4B2670E102005DD8E1 /* ImageDB */,
+				D7065F612670E106005DD8E1 /* ImageDBTests */,
+				D7065F6C2670E106005DD8E1 /* ImageDBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7065F4A2670E102005DD8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7065F5C2670E105005DD8E1 /* LaunchScreen.storyboard in Resources */,
+				D7065F592670E105005DD8E1 /* Assets.xcassets in Resources */,
+				D7065F572670E102005DD8E1 /* Main.storyboard in Resources */,
+				D744FAD22670FD9100C3B9BD /* ImageDB.db in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7065F602670E106005DD8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7065F6B2670E106005DD8E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4303287CB317DC032E397513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D1242321AA601C627E582AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageDB-ImageDBUITests/Pods-ImageDB-ImageDBUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageDB-ImageDBUITests/Pods-ImageDB-ImageDBUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageDB-ImageDBUITests/Pods-ImageDB-ImageDBUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		686925BB2D77D5AF9623E59B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageDB/Pods-ImageDB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageDB/Pods-ImageDB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageDB/Pods-ImageDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7152C9CBB6335829184CC426 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageDBTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57BBFAA43377F5BB0BF4792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageDB-ImageDBUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7065F482670E102005DD8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D744FAD42670FE5700C3B9BD /* DBManagerData.swift in Sources */,
+				D72A8B042681FE5A00358510 /* Util.swift in Sources */,
+				D7065F542670E102005DD8E1 /* ViewController.swift in Sources */,
+				D72A8B06268200F200358510 /* ModelManager.swift in Sources */,
+				D7065F502670E102005DD8E1 /* AppDelegate.swift in Sources */,
+				D7065F802670F354005DD8E1 /* ImageViewController.swift in Sources */,
+				D7065F522670E102005DD8E1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7065F5E2670E106005DD8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7065F672670E106005DD8E1 /* ImageDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7065F692670E106005DD8E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7065F722670E106005DD8E1 /* ImageDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7065F642670E106005DD8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7065F4B2670E102005DD8E1 /* ImageDB */;
+			targetProxy = D7065F632670E106005DD8E1 /* PBXContainerItemProxy */;
+		};
+		D7065F6F2670E106005DD8E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7065F4B2670E102005DD8E1 /* ImageDB */;
+			targetProxy = D7065F6E2670E106005DD8E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7065F552670E102005DD8E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7065F562670E102005DD8E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7065F5A2670E105005DD8E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7065F5B2670E105005DD8E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7065F742670E106005DD8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7065F752670E106005DD8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7065F772670E106005DD8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF36CB18AAC81FC67474A28 /* Pods-ImageDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6LL3HL525;
+				INFOPLIST_FILE = ImageDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = M.O.ImageDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageDB/ImageDB-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7065F782670E106005DD8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8463A83AB3522C53B07B4BF4 /* Pods-ImageDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D6LL3HL525;
+				INFOPLIST_FILE = ImageDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = M.O.ImageDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ImageDB/ImageDB-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7065F7A2670E106005DD8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875D7C68F64636895DD609DC /* Pods-ImageDBTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageDBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = M.O.ImageDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageDB.app/ImageDB";
+			};
+			name = Debug;
+		};
+		D7065F7B2670E106005DD8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DFE109FA1B3CE447ECEBC5E /* Pods-ImageDBTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageDBTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = M.O.ImageDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageDB.app/ImageDB";
+			};
+			name = Release;
+		};
+		D7065F7D2670E106005DD8E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39504274848CE4B83DCBBAB6 /* Pods-ImageDB-ImageDBUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = M.O.ImageDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageDB;
+			};
+			name = Debug;
+		};
+		D7065F7E2670E106005DD8E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E4AF88C2A068FF476F9771 /* Pods-ImageDB-ImageDBUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ImageDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = M.O.ImageDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageDB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7065F472670E102005DD8E1 /* Build configuration list for PBXProject "ImageDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7065F742670E106005DD8E1 /* Debug */,
+				D7065F752670E106005DD8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7065F762670E106005DD8E1 /* Build configuration list for PBXNativeTarget "ImageDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7065F772670E106005DD8E1 /* Debug */,
+				D7065F782670E106005DD8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7065F792670E106005DD8E1 /* Build configuration list for PBXNativeTarget "ImageDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7065F7A2670E106005DD8E1 /* Debug */,
+				D7065F7B2670E106005DD8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7065F7C2670E106005DD8E1 /* Build configuration list for PBXNativeTarget "ImageDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7065F7D2670E106005DD8E1 /* Debug */,
+				D7065F7E2670E106005DD8E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7065F442670E102005DD8E1 /* Project object */;
+}
